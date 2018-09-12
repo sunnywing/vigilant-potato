@@ -5,6 +5,7 @@ import asyncio
 import subprocess
 import time
 import datetime
+import os
 
 bot = commands.Bot('!')
 
@@ -44,4 +45,4 @@ class Main_Commands():
 
 
                 
-bot.run(token)
+bot.run(os.getenv('token'))
